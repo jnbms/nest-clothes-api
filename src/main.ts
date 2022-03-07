@@ -1,5 +1,6 @@
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
+import { env } from 'process';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
@@ -7,6 +8,6 @@ async function bootstrap() {
   // dto에 작성된 class-validator가 적용된다.
   app.useGlobalPipes(new ValidationPipe())
   app.enableCors();
-  await app.listen(3001);
+  await app.listen(process.env.PORT || 3001);
 }
 bootstrap();
