@@ -14,9 +14,9 @@ import { BoardModule } from './board/board.module';
     MongooseModule
       .forRoot('mongodb+srv://admin:5632@clothes.kknay.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'),
     ConfigModule.forRoot(),
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname,'..'),
-    }),
+    // ServeStaticModule.forRoot({
+    //   rootPath: join(__dirname,'..'),
+    // }),
     ClothesModule,
     UsersModule,
     AuthModule,
