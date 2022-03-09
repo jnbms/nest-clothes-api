@@ -20,7 +20,7 @@ import { BoardModule } from './board/board.module';
     ClothesModule,
     UsersModule,
     AuthModule,
-    BoardModule,
+    BoardModule,  
   ],
 })
 export class AppModule {}
