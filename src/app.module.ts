@@ -12,8 +12,8 @@ import { BoardModule } from './board/board.module';
 @Module({
   imports: [
     MongooseModule
-      .forRoot('mongodb+srv://admin:5632@clothes.kknay.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'),
-      // .forRoot(process.env.MONGODB_URI),
+      // .forRoot('mongodb+srv://admin:5632@clothes.kknay.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'),
+      .forRoot(process.env.MONGODB_URI),
     ConfigModule.forRoot(),
     // ServeStaticModule.forRoot({
     //   rootPath: join(__dirname,'..'),
