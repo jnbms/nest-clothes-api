@@ -1,5 +1,3 @@
-import {IsIn} from 'class-validator'
-
 export class craeteClothesDto {
     brand: string
     name: string
