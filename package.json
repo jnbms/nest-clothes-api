@@ -14,7 +14,8 @@
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "nest build && node dist/main"
+    "start:prod": "npm install && nest build && node dist/main",
+    "direct": "node dist/main"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
