@@ -13,8 +13,7 @@ import { BoardModule } from './board/board.module';
       isGlobal: true
     }),
     MongooseModule
-      .forRoot("mongodb+srv://admin:5632@clothes.kknay.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"),
-      // .forRoot(process.env.MONGODB_URI),
+      .forRoot(process.env.MONGODB_URI),
     // ServeStaticModule.forRoot({
     //   rootPath: join(__dirname,'..'),
     // }),
