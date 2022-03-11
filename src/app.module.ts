@@ -6,6 +6,8 @@ import { ConfigModule } from '@nestjs/config'
 // import { RouterModule } from '@nestjs/core';
 import { AuthModule } from './auth/auth.module';
 import { BoardModule } from './board/board.module';
+import { ServeStaticModule} from '@nestjs/serve-static'
+import { join } from 'path';
 
 @Module({
   imports: [
@@ -14,9 +16,9 @@ import { BoardModule } from './board/board.module';
     }),
     MongooseModule
       .forRoot(process.env.MONGODB_URI),
-    // ServeStaticModule.forRoot({
-    //   rootPath: join(__dirname,'..'),
-    // }),
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname,'..'),
+    }),
     ClothesModule,
     UsersModule,
     AuthModule,
