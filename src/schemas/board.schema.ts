@@ -16,7 +16,7 @@ export class board {
 
     // mongo DB's default timezone is UTC, monent.js를 사용했지만 변화되지 않았다.
     // 시간 자체 문제보다 표기 상의 문제인거 같아, 문제되는 9시간을 추가했다.
-    @Prop({type: Date, default: Date.now})
+    @Prop({type: Date, default: () => Date.now() + 9*3600*1000})
     createdAt
 }
 
