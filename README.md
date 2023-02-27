@@ -13,4 +13,4 @@ ORM: mongoose
 DB : mongo atlas
 
 #### 추후 업데이트 
-- 헥사고날 아키텍처(ports and adapter) 패턴으로 변겅
+- 헥사고날 아키텍처(ports and adapter) 패턴으로 변경
